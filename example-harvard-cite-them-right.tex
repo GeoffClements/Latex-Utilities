@@ -1,0 +1,16 @@
+\documentclass{article}
+\usepackage[style=authoryear-comp, backend=biber]{biblatex}
+\addbibresource{references.bib}
+
+% Customization for Cite Them Right 12th edition
+\DeclareFieldFormat{postnote}{#1}
+\DeclareFieldFormat{multipostnote}{#1}
+
+\begin{document}
+
+This is an example sentence citing a source \parencite{example-source}.
+Another example with a page number \parencite{example-source}.
+
+\printbibliography
+
+\end{document}
